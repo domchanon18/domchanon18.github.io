@@ -1,0 +1,199 @@
+/*Chanon Sahanon SID:6309682117*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: saddlebrown;
+}
+
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 675px){
+    .nav-ul{
+        justify-content: center;
+        
+    }
+    .nav-li{
+        margin: .5em 0;
+        
+        
+    }
+    .container{
+        flex-direction: column;
+    }
+    footer{
+        bottom: 0px;
+        
+    }
+    
+}
+#content{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, minmax(150px,auto));
+    
+    grid-gap: 10px;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+#content div{
+    background: #6b6b6b;
+    padding: 30px;
+}
+#content div:nth-child(even){
+    background: #777;
+    
+}
+
+.one{
+    grid-column: 1/8;
+}
+.three{
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+.four{
+    grid-column: 3/8;
+    grid-row: 2/4;
+}
+.five{
+    grid-column:1/9 ;
+
+}
+
+@media screen and (max-width: 600px){
+    #content{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, minmax(150px,auto));
+        
+        grid-gap: 10px;
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+    #content div{
+        background: #555555;
+        padding: 30px;
+    }
+    #content div:nth-child(even){
+        background: #777;
+    }
+    
+    .one{
+        grid-column: 1/8;
+    }
+    .three{
+        grid-column: 1/8;
+        grid-row: 2/3;
+    }
+    .four{
+        grid-column: 1/8;
+        grid-row: 3/4;
+    }
+    .five{
+        grid-column:1/8 ;
+    
+    }
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0; 
+    margin-left: 0;
+    
+}
+
+nav li{
+    margin: 0 1em;
+    margin-bottom: 1em;
+}
+
+nav a{
+    text-decoration: none;
+    color: #d3d3d3;
+    font-weight: 700;
+}
+
+nav a:hover{
+    color: brown;
+}
+
+footer {
+    grid-area: footer;
+    color: #fff;
+    text-align: center;
+    
+    width: 100%;
+    bottom: 0;
+    
+   
+}
+
+
+.mainIndex{
+    padding: 10px;
+    margin-top: 60px;
+    margin: auto;
+    text-align: center;
+    border:3px solid black ;
+    width: 50%;
+    
+}
+
+/*Life page*/
+
+.main{
+    justify-content: center;
+    text-align: center;
+}
+
+.story{
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    border: #727272 3px solid;
+    padding: 1em;
+}
+
+/*resume*/
+
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*contacts*/
+
+.contacts li{
+    text-decoration: none;
+    list-style: none;
+    margin: 0 1em;
+    margin-bottom: 1em;
+    color: #727272;
+    font-weight: 700;
+    text-align: center;
+}
