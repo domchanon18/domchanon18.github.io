@@ -21,25 +21,7 @@ body {
     justify-content: space-between;
 }
 
-@media (max-width: 675px){
-    .nav-ul{
-        justify-content: center;
-        
-    }
-    .nav-li{
-        margin: .5em 0;
-        
-        
-    }
-    .container{
-        flex-direction: column;
-    }
-    footer{
-        bottom: 0px;
-        
-    }
     
-}
 #content{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -151,15 +133,7 @@ footer {
 }
 
 
-.mainIndex{
-    padding: 10px;
-    margin-top: 60px;
-    margin: auto;
-    text-align: center;
-    border:3px solid black ;
-    width: 50%;
-    
-}
+
 
 /*Life page*/
 
